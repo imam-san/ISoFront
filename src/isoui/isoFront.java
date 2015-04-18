@@ -268,7 +268,7 @@ public class isoFront  extends JFrame {
     // start components
     
     jTxtHost.setBounds(96, 24, 150, 20);
-    jTxtHost.setText("my.flashiz.co.id");
+    jTxtHost.setText("localhost");
     cp.add(jTxtHost);
     jLabel1.setBounds(16, 24, 54, 20);
     jLabel1.setText("IP Host");
