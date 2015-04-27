@@ -228,7 +228,8 @@ public class isoFront  extends JFrame {
     {
         int result;
         isomsg= new ISOMsg();
-         isoSender = new IsoSender(isomsg,jTxtHost.getText(), Integer.valueOf( jTxtPort.getText()), 1, "");
+        int sel=jCboxIsoType.getSelectedIndex()+1;
+         isoSender = new IsoSender(isomsg,jTxtHost.getText(), Integer.valueOf( jTxtPort.getText()), sel, "");
         if ( isoSender.sendConnect()<0)
         {  switchbt(true);
           showMessage(isoSender.getError());
@@ -268,20 +269,20 @@ public class isoFront  extends JFrame {
     // start components
     
     jTxtHost.setBounds(96, 24, 150, 20);
-    jTxtHost.setText("my.flashiz.co.id");
+    jTxtHost.setText("sandbox.flashiz.co.id");
     cp.add(jTxtHost);
     jLabel1.setBounds(16, 24, 54, 20);
     jLabel1.setText("IP Host");
     cp.add(jLabel1);
     jTxtPort.setBounds(96, 48, 75, 20);
-    jTxtPort.setText("9013");
+    jTxtPort.setText("3000");
     cp.add(jTxtPort);
     jLabel2.setBounds(16, 48, 75, 20);
     jLabel2.setText("Port");
     cp.add(jLabel2);
     
    
-    jBtRefresh.setBounds(288, 72, 75, 45);
+    jBtRefresh.setBounds(750, 72, 75, 45);
     jBtRefresh.setText("Refresh");
     jBtRefresh.setMargin(new Insets(2, 2, 2, 2));
     jBtRefresh.addActionListener(new ActionListener() { 
@@ -305,7 +306,7 @@ public class isoFront  extends JFrame {
       }
     });
     cp.add(jBtRefresh);
-    jBtConnecting.setBounds(376, 72, 75, 45);
+    jBtConnecting.setBounds(830, 72, 75, 45);
     //jButton1.setBounds(288, 72, 75, 45);
     jBtConnecting.setText("Connect");
     jBtConnecting.setMargin(new Insets(2, 2, 2, 2));
@@ -319,13 +320,13 @@ public class isoFront  extends JFrame {
     });
     cp.add(jBtConnecting);
     jCboxIsoType.setModel(jComboBox2Model);
-    jCboxIsoType.setBounds(96, 72, 150, 20);
+    jCboxIsoType.setBounds(96, 72, 625, 20);
   // jCboxIsoType.addItem("iso87Binary");
    //jCboxIsoType.addItem("iso87Ascii");
    
     cp.add(jCboxIsoType);
     jCboxFilename.setModel(jComboBox1Model);
-    jCboxFilename.setBounds(96, 95, 150, 20);
+    jCboxFilename.setBounds(96, 95, 625, 20);
     jCboxFilename.addItemListener(new ItemChangeListener());
     cp.add(jCboxFilename);
    
@@ -334,7 +335,7 @@ public class isoFront  extends JFrame {
     jCboxChannel.setBounds(250, 24, 150, 20);
    // jCboxChannel.addItemListener(new ItemChangeListener());
     jCboxChannel.addItem("Binary");
-    jCboxChannel.addItem("asci");
+    jCboxChannel.addItem("Ascii");
     
     cp.add(jCboxChannel);
    
@@ -345,7 +346,7 @@ public class isoFront  extends JFrame {
     jLabel4.setBounds(16, 95, 70, 20);
     jLabel4.setText("FileName");
     cp.add(jLabel4);
-    jBtSend.setBounds(470, 72, 75, 45);
+    jBtSend.setBounds(900, 72, 75, 45);
     jBtSend.setText("Send");
     jBtSend.setMargin(new Insets(2, 2, 2, 2));
     jBtSend.addActionListener(new ActionListener() { 
