@@ -199,9 +199,6 @@ public class isoFront  extends JFrame {
                             
                             if (!isNullorEmptyStringPasser(deData) && (deid>1))
                             {
-                                
-                              
-                                    
                                     isomsg.set(deid, settingdata(deData));
                                  //    System.out.println("len i"+deFields +":"+deData.length()+""+deData);
                                      

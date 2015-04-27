@@ -8,43 +8,35 @@
 <isopackager>
   <isofield
       id="0"
-      length="4"
-      name="MESSAGE TYPE INDICATOR"
-      data="0800"
-      class="org.jpos.iso.IFA_NUMERIC"/>
+      data="0220"/>
   <isofield
       id="1"
       length="16"
       name="BIT MAP"
       class="org.jpos.iso.IFA_BITMAP"/>
-  <isofield
-      id="3"
-      length="6"
-      name="PROCESSING CODE"
-      data="000010"
-      class="org.jpos.iso.IFA_NUMERIC"/>
-  <isofield
-      id="7"
-      length="10"
-      name="TRANSMISSION DATE AND TIME"
-      data="1232123456"
-      class="org.jpos.iso.IFA_NUMERIC"/>
-  <isofield
-      id="11"
-      length="6"
-      name="SYSTEM TRACE AUDIT NUMBER"
-      data="123432"
-      class="org.jpos.iso.IFA_NUMERIC"/>
-
-  <isofield
-      id="33"
-      length="11"
-      name="FORWARDING INSTITUTION IDENT CODE"
-      data="881"
-      class="org.jpos.iso.IFA_LLNUM"/>
-  <isofield
-      id="70"
-      length="3"
-      name="301"
-      class="org.jpos.iso.IFA_NUMERIC"/>
+ <isofield id="3" data="500000"/>
+ <isofield id="4" data="000000000000200000"/>
+ <isofield id="7" data="0420181126"/>
+ <isofield id="11" data="001471"/>
+ <isofield id="12" data="181126"/>
+ <isofield id="13" data="0420"/>
+ <isofield id="15" data="0420"/>
+ <isofield id="18" data="6017"/>
+ <isofield id="22" data="000"/>
+ <isofield id="25" data="05"/>
+ <isofield id="26" data="06"/>
+ <isofield id="27" data="6"/>
+ <isofield id="32" data="168"/>
+ <isofield id="33" data="168"/>
+ <isofield id="37" data="000000001471"/>
+ <isofield id="41" data="15390100"/>
+ <isofield id="42" data="629000050650   "/>
+ <isofield id="43" data="RAND TESTING STORE                      "/>
+ <isofield id="48" data="31eb136e55437b180d6a3e477e075a48a6e2279c"/>
+ <isofield id="49" data="360"/>
+ <isofield id="54" data="000000000000000000"/>
+ <isofield id="61" data="dNzwvll3kVj1"/>
+ <isofield id="62" data="                                        000000000000000                                                            "/>
+ <isofield id="63" data="1000000013001C00000000C00000000C00000000C00000000C00000000C00000000C00000000C00000000C00000000C00000000C00000000C00000000C00000000"/>
+ <isofield id="98" data="0                        "/>
 </isopackager>
